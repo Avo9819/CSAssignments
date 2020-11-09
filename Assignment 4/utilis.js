@@ -7,9 +7,9 @@ module.exports = {
         }
         else {
             const finalArray = [];
-            for(let currRow = 0; currRow < mat1.length; currRow++) {            //currRow = The Number of Rows in the Matrix
+            for(let currRow = 0; currRow < mat1.length; currRow++) {            
                 finalArray[currRow] = [];
-                for(let currCol = 0; currCol < mat2[0].length; currCol++) {     //currCol = 
+                for(let currCol = 0; currCol < mat2[0].length; currCol++) {      
                     let currElement = 0;
                     for(let currIndex = 0; currIndex < mat1[0].length; currIndex++) {
                        currElement += mat1[currRow][currIndex] * mat2[currIndex][currCol] 
@@ -55,7 +55,7 @@ module.exports = {
         }
         return sum;
     },
-    
+
     elementAdder2: function (mat1) {
         const finalArray = [];
         for(let currRow = 0; currRow < mat1.length; currRow++) {
