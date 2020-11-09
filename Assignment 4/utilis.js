@@ -40,15 +40,34 @@ module.exports = {
         } 
     },
 
-    elementAdder: function (mat1) {
+    elementAdder: function(matrix){
+       let finalArray = [];
+       for(let i = 0; i < matrix.length; i++) {
+           finalArray.push(this.arrayDigitSum(matrix[i]));
+       } 
+       return finalArray;
+    },
+    
+    elementAdder2: function (mat1) {
         const finalArray = [];
         for(let currRow = 0; currRow < mat1.length; currRow++) {
             let currSum = 0;
-            for(let currCol = 0; currCol < mat1[currRow].length; currCol++) {
+            for(let currCol = 0; currCol < mat1[currRow].length; currCol++) { //  [[1 , 2], [3 , 4]]
                 currSum += mat1[currRow][currCol] 
             }
             finalArray.push(currSum);
         }
         return finalArray;  
     },
+
+    arrayDigitSum: function(mat){
+        let sum = 0;
+        for(let i = 0; i< mat.length; i++) {
+            sum += mat[i];
+        }
+        return sum;
+    }
 }
+    
+
+
