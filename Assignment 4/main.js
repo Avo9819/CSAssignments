@@ -3,7 +3,7 @@ const reader = require("readline-sync")
 const mat = require("./MatrixCreator");
 const utilis = require("./utilis");
 
-let choice = reader.questionInt("Please choose the one want: \n 1.Matrix Multiplication \n 2.Matrix Sum \n 3.Sum of Arrays \n n = ")
+let choice = reader.questionInt("Please choose the one you want: \n 1.Matrix Multiplication \n 2.Matrix Sum \n 3.Sum of Arrays \n n = ")
 
 if(choice === 1) {
     let matA = mat.matrixCreator();
