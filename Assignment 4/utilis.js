@@ -48,6 +48,14 @@ module.exports = {
        return finalArray;
     },
     
+    arrayDigitSum: function(mat){
+        let sum = 0;
+        for(let i = 0; i< mat.length; i++) {
+            sum += mat[i];
+        }
+        return sum;
+    },
+    
     elementAdder2: function (mat1) {
         const finalArray = [];
         for(let currRow = 0; currRow < mat1.length; currRow++) {
@@ -60,13 +68,6 @@ module.exports = {
         return finalArray;  
     },
 
-    arrayDigitSum: function(mat){
-        let sum = 0;
-        for(let i = 0; i< mat.length; i++) {
-            sum += mat[i];
-        }
-        return sum;
-    }
 }
     
 
